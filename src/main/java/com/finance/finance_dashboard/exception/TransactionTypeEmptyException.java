@@ -1,0 +1,11 @@
+package com.finance.finance_dashboard.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class TransactionTypeEmptyException extends RuntimeException {
+  public TransactionTypeEmptyException(String message) {
+    super(message);
+  }
+}
